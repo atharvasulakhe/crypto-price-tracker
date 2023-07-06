@@ -2,6 +2,8 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Axios from 'axios'
 import Coin from './components/Coin'
+//import bannerImage from './banner-943868.jpg';
+
 //API used- Public API
 
 function App() {
@@ -21,7 +23,9 @@ function App() {
   return (
     <div className="App">
       <div className="cryptoHeader">
-        <input type='text' placeholder='Search' onChange={(event) => {setSearchWord(event.target.value)}}/> {/* searchbar */}
+        <h1>Cryptocurrency Price Tracker</h1>
+        <input type='text' placeholder='Search by name' onChange={(event) => {setSearchWord(event.target.value)}}/> {/* searchbar */}
+        <h3>An Atharva Sulakhe Site</h3>
       </div>
       <div className="cryptoDisplay">
         { filteredCoins.map((coin) => { 

@@ -1,21 +1,41 @@
+
 .App {
   height: auto;
   width: 100vw;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 body {
   padding: 0%;
   margin: 0%;
+  overflow-x: hidden;
 }
 
 .cryptoHeader {
   width: 100%;
   height: 200px;
-  background-color: rgb(107, 102, 171);
+  background-image: url(banner-1036483.jpg);
+  background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cryptoHeader h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(249, 244, 244);
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.cryptoHeader h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: azure;
+  font-size: 20px;
+  margin-top: 10px;
+  
 }
 
 .cryptoHeader input {
@@ -31,17 +51,20 @@ body {
   margin-top: 10px;
 }
 
+
 .cryptoDisplay {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
 }
+
 .coin {
   width: 400px;
   height: 300px;
-  background-color: rgb(36, 36, 36);
+  background-image: url(banner-943868.jpg);
+  background-size: cover;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
