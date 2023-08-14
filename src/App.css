@@ -28,15 +28,15 @@ body {
   color: rgb(249, 244, 244);
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.cryptoHeader h3{
+/* .cryptoHeader h3{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: azure;
   font-size: 20px;
   margin-top: 10px;
   
-}
+} */
 
 .cryptoHeader input {
   width: 50%;
@@ -72,6 +72,26 @@ body {
   text-align: center;
 }
 
+.coin:hover{
+    transform: scale(1.1);
+}
 .coin img {
   height: 100px;
+}
+
+/* App.css */
+.newslink {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #050709;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.newslink:hover {
+  /* background-color: #005dbb; */
+  transform: scale(1.1);
 }

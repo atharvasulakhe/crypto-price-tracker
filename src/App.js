@@ -3,10 +3,12 @@ import { useEffect, useState } from 'react';
 import Axios from 'axios'
 import Coin from './components/Coin'
 //import bannerImage from './banner-943868.jpg';
-
+import NewsPage from './components/NewsPage';
+//import { BrowserRouter } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 //API used- Public API
 
-function App() {
+function Home() {
   const[listOfCoins, setListOfCoins]=useState([]);
   const[searchWord, setSearchWord]= useState("")
   useEffect(() => {
@@ -21,11 +23,13 @@ function App() {
       return coin.name.toLowerCase().includes(searchWord.toLowerCase());
   })
   return (
+    
     <div className="App">
       <div className="cryptoHeader">
         <h1>Cryptocurrency Price Tracker</h1>
         <input type='text' placeholder='Search by name' onChange={(event) => {setSearchWord(event.target.value)}}/> {/* searchbar */}
-        <h3>An Atharva Sulakhe Site</h3>
+        {/* <h3>An Atharva Sulakhe Site</h3> */}
+        <Link className='newslink' to="/news"> Crypto News</Link>
       </div>
       <div className="cryptoDisplay">
         { filteredCoins.map((coin) => { 
@@ -38,7 +42,18 @@ function App() {
         })}
       </div>
     </div>
-  );
-}
+   );
+} 
 
+function App(){
+  return(
+  <Router>
+  <Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/news" element={<NewsPage />} />
+  </Routes>
+  </Router>
+  )
+}
+      
 export default App;

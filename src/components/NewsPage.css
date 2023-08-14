@@ -1,0 +1,36 @@
+/* NewsPage.css */
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: url(src/banner-943868.jpg) ; */
+    background: linear-gradient(to bottom, #0a4175, #3ab4ec);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .news-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.658);
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .news-card h3 {
+    margin-top: 0;
+    color: rgb(91, 91, 6);
+  }
+  
+  .news-card p {
+    margin: 10px 0;
+  }
+  
+  .news-card a {
+    color: #0074e4;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
