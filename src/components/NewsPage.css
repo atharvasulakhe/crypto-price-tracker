@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     /* background: url(src/banner-943868.jpg) ; */
-    background: linear-gradient(to bottom, #0a4175, #3ab4ec);
+    background: linear-gradient(to right, #0a4175, #3ab4ec);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
   }
@@ -18,7 +18,9 @@
     max-width: 600px;
     width: 100%;
   }
-  
+  .news-card:hover{
+    transform: scale(1.1)
+  }
   .news-card h3 {
     margin-top: 0;
     color: rgb(91, 91, 6);
